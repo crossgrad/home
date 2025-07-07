@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CROSSGRAD - Precise Guidance Powered by Students </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    @media (min-width: 768px) {
+      .scroll-wrapper {
+        height: 100vh;
+        overflow: hidden;
+      }
+      .scroll-container {
+        display: flex;
+        height: 100vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+      }
+      .section {
+        flex: none;
+        width: 100vw;
+        height: 100vh;
+      }
+    }
+    @media (max-width: 767px) {
+      html, body {
+        overflow: auto;
+      }
+      .scroll-container {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .section {
+        width: 100%;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="fixed top-0 left-0 right-0 z-10 bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">CROSSGRAD</h1>
+    <div class="relative">
+      <button id="menuBtn" class="px-4 py-2 bg-gray-300 rounded">Menu</button>
+      <nav id="mobileMenu" class="hidden absolute right-0 mt-2 bg-white shadow-md rounded p-4 space-y-2">
+        <a href="#home" class="block hover:underline">Home</a>
+        <a href="#about" class="block hover:underline">About</a>
+        <a href="#services" class="block hover:underline">Services</a>
+        <a href="#contact" class="block hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="scroll-wrapper mt-16">
+    <main class="scroll-container" id="scrollContainer">
+      <section id="home" class="section flex items-center justify-center bg-blue-100">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4">One Patform. Journey of a thousands students.</h2>
+          <p class="text-lg">A platform where students help each other get into top universities. Real advice, real stories, real results.</p>
+        </div>
+      </section>
+
+      <section id="about" class="section flex items-center justify-center bg-green-100">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4">Admissions - A cake walk.</h2>
+          <p class="text-lg">Discover students who have successfully gained admission to universities across the globe. Learn directly from their journeys, ask questions, and find support. It's guidance that gets you in!</p>
+        </div>
+      </section>
+
+      <section id="services" class="section flex items-center justify-center bg-yellow-100">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4">Top Univerities and Adminission Score Calculator</h2>
+          <p class="text-lg">Get a curated list of the top universities worldwide. Share your academic and extracurricular profile and know your estimated admission score. Get a realistic sense of where you can apply and what you need to work on.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section flex items-center justify-center bg-pink-100">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4">Get Involved</h2>
+          <p class="text-lg">Learn how to register. Already studying at a reputed university? Share your knowledge and experience to help someone else get there. Become a mentor - Make amazing friends as you do. </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const scrollContainer = document.getElementById('scrollContainer');
+
+    scrollContainer.addEventListener('wheel', (evt) => {
+      if (window.innerWidth >= 768) {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY * 3;
+      }
+    }, { passive: false });
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
