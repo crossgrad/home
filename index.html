@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CROSSGRAD - Graduate Across Borders! </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+	<style>
+  .slide-word {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  @keyframes slide-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+	</style>
+
+
+
+
+
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    @media (min-width: 768px) {
+      .scroll-wrapper {
+        height: 100vh;
+        overflow-y: hidden;
+      }
+      .scroll-container {
+        display: flex;
+        height: 100vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+      }
+      .section {
+        flex: none;
+        width: 100vw;
+        height: 100vh;
+      }
+    }
+    @media (max-width: 767px) {
+      html, body {
+        overflow: auto;
+      }
+      .scroll-container {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .section {
+        width: 100%;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow p-4 flex justify-between items-center">
+	<a href="#home"><img src="Logo XS.png" alt="CROSSGRAD Logo" class="h-[1.75rem] md:h-[1.75rem] lg:h-[1.75rem]"></a>
+    <div class="relative">
+
+ 	<button id="menuBtn" class="p-2 bg-green-50 rounded">
+  <svg class="h-6 w-6 text-green-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+    viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+	</button>
+
+
+      <nav id="mobileMenu" class="hidden absolute right-0 mt-2 bg-white shadow-md rounded p-0 space-y-0 w-72 z-50">
+	<div class="h-2"></div>
+        <a href="#home" class="block px-6 py-3 rounded hover:bg-green-50">Home - CROSSGRAD</a>
+        <a href="#more" class="block px-6 py-3 rounded hover:bg-green-50">What to do</a>
+        <a href="#univ" class="block px-6 py-3 rounded hover:bg-green-50">Universities</a>
+        <a href="#register" class="block px-6 py-3 rounded hover:bg-green-50">Join the waitlist</a>
+        <a href="#contact" class="block px-6 py-3 rounded hover:bg-green-50">About Us</a>
+	<div class="h-2"></div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="scroll-wrapper mt-16">
+    <main class="scroll-container" id="scrollContainer">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="home" class="section relative bg-white overflow-hidden h-screen grid grid-rows-11">
+  <div class="relative row-span-7 grid grid-cols-11">
+    
+    <div class="absolute inset-0 flex items-centre pointer-events-none">
+      <div class="grid grid-cols-11">
+        <div class="col-start-4 col-end-11 h-full z-10 flex items-centre">
+          <img src="Worldmap BGF.png"
+               alt="World Background"
+               class="max-h-[1000px] object-contain" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-start-2 col-end-9 flex items-center h-full px-04 z-20">
+      <div>
+        <h2 class="text-4xl md:text-6xl font-bold mb-4 text-green-400">
+          Scholarships made easy.
+        </h2>
+	<h2 class="text-4xl md:text-6xl font-bold mb-4 text-green-400">
+          Say <span class="text-cyan-400 inline-block" style="opacity: 0;  transform: translateY(20px);  animation: slide-up 0.6s ease-out forwards; animation-delay: 0.2s">hello,</span>
+        </h2>
+	<h2 class="text-4xl md:text-6xl font-bold mb-4 text-green-400">
+          to your dream <span class="text-cyan-400 inline-block" style="opacity: 0;  transform: translateY(20px);  animation: slide-up 0.6s ease-out forwards; animation-delay: 0.4s">university</span>
+        </h2>
+	<div style="height: 20px;"></div>
+        <p class="text-xl md:text-3xl leading-tight font text-gray-400">
+          Admissions guidance from real students across the world.
+	<div style="height: 30px;"></div>
+
+   	<a href="#register">
+ 	 <button class="text-2xl font text-white bg-sky-400 px-6 py-3 rounded-lg hover:bg-sky-300">
+    	Join the waitlist
+  	</button>
+	</a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="row-span-4 grid grid-cols-11 items-start justify-center bg-white z-30">
+    
+    <div class="col-start-2 col-end-4 flex flex-col items-center text-center">
+      <img src="university.png" alt="Universities" class="opacity-50 w-40 h-30 md:h-40 mb-6 object-contain">
+      <p class="text-lg md:text-2xl font-bold text-cyan-300">32+ Universities Worldwide</p>
+	<div style="height: 50px;"></div>
+    </div>
+
+    <div class="col-start-5 col-end-7 flex flex-col items-center text-center">
+      <img src="scholarship.png" alt="Scholarships" class="opacity-50 w-40 h-30 md:h-40 mb-6 object-contain">
+      <p class="text-lg md:text-2xl font-bold text-cyan-300">42+ Scholarship Programmes</p>
+<div style="height: 50px;"></div>
+    </div>
+
+    <div class="col-start-8 col-end-10 flex flex-col items-center text-center">
+      <img src="volunteers.png" alt="Volunteers" class="opacity-50 w-40 h-30 md:h-40 mb-6 object-contain">
+      <p class="text-lg md:text-2xl font-bold text-cyan-300">60+ Student Volunteers</p>
+<div style="height: 50px;"></div>
+    </div>
+	
+  </div>
+
+
+</section>
+
+
+<section id="more" class="section flex items-center justify-center bg-green-100">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4">Admissions - A cake walk.</h2>
+          <p class="text-lg">Discover students who have successfully gained admission to universities across the globe. Learn directly from their journeys, ask questions, and find support. It's guidance that gets you in!</p>
+        </div>
+      </section>
+
+      <section id="univ" class="section flex items-center justify-center bg-yellow-100">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4">Top Univerities and Adminission Score Calculator</h2>
+          <p class="text-lg">Get a curated list of the top universities worldwide. Share your academic and extracurricular profile and know your estimated admission score. Get a realistic sense of where you can apply and what you need to work on.</p>
+        </div>
+      </section>
+
+      <section id="register" class="section flex items-center justify-center bg-pink-100">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4">Get Involved</h2>
+          <p class="text-lg">Learn how to register. Already studying at a reputed university? Share your knowledge and experience to help someone else get there. Become a mentor - Make amazing friends as you do. </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section flex items-center justify-center bg-pink-300">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold mb-4">Get Involved</h2>
+          <p class="text-lg">Learn how to register. Already studying at a reputed university? Share your knowledge and experience to help someone else get there. Become a mentor - Make amazing friends as you do. </p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    const scrollContainer = document.getElementById('scrollContainer');
+
+    scrollContainer.addEventListener('wheel', (evt) => {
+      if (window.innerWidth >= 768) {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY * 3;
+      }
+    }, { passive: false });
+
+    // The following code block was redundant and caused issues. It has been commented out.
+    /*
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    */
+  </script>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // Toggle menu on button click
+  menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent bubbling
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Close menu when a link is clicked
+  const menuLinks = mobileMenu.querySelectorAll('a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+
+  // Close when clicking outside menu/button
+  document.addEventListener('click', (event) => {
+    if (
+      !mobileMenu.contains(event.target) &&
+      !menuBtn.contains(event.target)
+    ) {
+      mobileMenu.classList.add('hidden');
+    }
+  });
+</script>
+
+</body>
+</html>
